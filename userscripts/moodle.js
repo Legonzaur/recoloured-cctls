@@ -140,7 +140,10 @@
 		if (typeof GM !== "undefined") {
 			GM.xmlHttpRequest({
 				method: "GET",
-				url: "http://sleepycat.date:8000/cctl/" + quizzNumber,
+				url:
+					"https://raw.githubusercontent.com/Legonzaur/recouloured-cctls/main/cctl/" +
+					quizzNumber +
+					".json",
 				onload: function (response) {
 					callback(response.responseText);
 				},
