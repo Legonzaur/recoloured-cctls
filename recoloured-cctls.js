@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Recoloured CCTL
 // @namespace    https://github.com/Legonzaur/recoloured-cctls
-// @version      1.0
+// @version      1.1
 // @description  Brings back colors to your favourite online exams
 // @author       Legonzaur
 // @match        https://moodle-examens.cesi.fr/mod/quiz/review.php?attempt=*
@@ -51,7 +51,7 @@
 				answer = multichoiceAnswer;
 			} else if (question.className.includes("match")) {
 				user = matchUser;
-				//answer = matchAnswer;
+				answer = matchAnswer;
 			} else if (question.className.includes("multianswer")) {
 				user = multianswerUser;
 				answer = multianswerAnswer;
@@ -115,7 +115,11 @@
 			question.querySelectorAll(".answer select option[selected]")
 		).map((e) => e.text);
 	}
-	function matchAnswer(question) {}
+	function matchAnswer(question) {
+		return Array.from(
+			question.querySelector(".rightanswer").children
+		).map((e) => e.innerText.split("→")[1]?.trim());
+	}
 	function shortanswerUser(question) {
 		return [question.querySelector(".answer input").value];
 	}
