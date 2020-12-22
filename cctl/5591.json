@@ -1,0 +1,23 @@
+{
+    "3":[ "Compilation (early binding)",
+        "Chargement (delayed binding)",
+        "Exécution (late binding)",
+        "Compilation (early binding)",
+        "Exécution (late binding)",
+        "Exécution (late binding)",
+        "Chargement (delayed binding)"],
+    "9":[ "Sauver l’état du processus",
+        "Trouver et choisir l’espace nécessaire sur un disque",
+        "Recopier le processus non actif sur un espace sur le disque",
+        "Trouver et choisir l’espace nécessaire en mémoire",
+        "Recopier en mémoire centrale le(s) processus réactivé(s)" ],
+    "13":[ "Prêt-> Actif",
+        "Actif-> Attente",
+        "Actif-> Prêt",
+        "Attente -> Prêt" ],
+    "20":[ "Aucun risque de famine",
+        "Processus longs jamais exécutés",
+        "Aucun risque de famine",
+        "Processus batch jamais exécutés",
+        "Processus avec priorité la plus basse jamais exécutés" ]
+}

@@ -1,0 +1,3 @@
+{
+    "21":["Un commit déclenche un build", "Un build réussi lance les tests", "Si les tests passent, le build est validé"]
+}
