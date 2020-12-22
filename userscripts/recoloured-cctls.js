@@ -1,3 +1,13 @@
+// ==UserScript==
+// @name         Recoloured CCTL reviews
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  Brings back colors to your favourite online exams
+// @author       Legonzaur
+// @match        https://moodle-examens.cesi.fr/mod/quiz/review.php?attempt=*
+// @grant        GM.xmlHttpRequest
+// ==/UserScript==
+
 (function () {
 	"use strict";
 	if (window.location.href.includes("showall")) {
