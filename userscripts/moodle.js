@@ -57,8 +57,6 @@
 				}
 			}
 			if (user && answer) {
-				console.log(user(question));
-				console.log(answer(question));
 				if (
 					JSON.stringify(user(question)) == JSON.stringify(answer(question))
 				) {
