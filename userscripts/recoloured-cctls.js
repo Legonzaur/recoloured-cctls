@@ -1,13 +1,12 @@
 // ==UserScript==
 // @name         Recoloured CCTL
-// @namespace    https://moodle-examens.cesi.fr
+// @namespace    https://github.com/Legonzaur/recoloured-cctls
 // @version      1.0
 // @description  Brings back colors to your favourite online exams
 // @author       Legonzaur
 // @match        https://moodle-examens.cesi.fr/mod/quiz/review.php?attempt=*
 // @grant        GM.xmlHttpRequest
 // @downloadURL  https://raw.githubusercontent.com/Legonzaur/recoloured-cctls/main/userscripts/recoloured-cctls.js
-// @support		 https://github.com/Legonzaur/recoloured-cctls/issues
 // ==/UserScript==
 
 (function () {
